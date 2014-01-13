@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <TextView
+        android:id="@+id/psnrbox"
+        android:layout_below="@id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <TextView
+        android:id="@+id/mssimbox"
+        android:layout_below="@id/psnrbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <ImageView
+        android:id="@+id/sample"
+        android:layout_below="@id/mssimbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:id="@+id/reference"
+        android:layout_marginTop="50sp"
+        android:layout_toRightOf="@id/sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    <Button
+        android:id="@+id/btnShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sample"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:text="@string/btnShotStr" />
+
+    <Button
+        android:id="@+id/runTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnShot"
+        android:layout_alignBottom="@+id/btnShot"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="Run" />
+
+    <SeekBar
+        android:id="@+id/finalThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnShot"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textFinalThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalThreshold"
+        android:layout_alignLeft="@+id/finalThreshold"
+        android:text="TextView" />
+
+    <SeekBar
+        android:id="@+id/goodThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textFinalThreshold"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textGoodThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goodThreshold"
+        android:layout_alignLeft="@+id/goodThreshold"
+        android:text="TextView" />
+
+</RelativeLayout>
